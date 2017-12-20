@@ -12,7 +12,7 @@ Using SAS/WPS and Python for roots of a cubic equation
     ```          y=solve (x**3+8,x);  ```
     ```          print(Y);  ```
     ```    ```
-    ```        [2,1+sqrt(3)i,1-sqrt(3)i]  ```
+    ```        [-2,1+sqrt(3)i,1-sqrt(3)i]  ```
     ```    ```
     ```     2. Using NUMPY  ```
     ```    ```
@@ -72,20 +72,11 @@ Using SAS/WPS and Python for roots of a cubic equation
     ```  WANT  ```
     ```  ====  ```
     ```    ```
-    ```   SYMPY      [2,         1+sqrt(3)i,      1-sqrt(3)i]  ```
+    ```   SYMPY      [-2,         1+sqrt(3)i,      1-sqrt(3)i]  ```
     ```    ```
     ```   NUMPY      [-2.+0j     1+1.73205081j    1-1.73205081j]  ```
     ```    ```
     ```   De Moivre  [-2+4e-16j  1+1.73205081j    1-1.73205081j]  ```
-    ```    ```
-    ```  Lets check  ```
-    ```    ```
-    ```    let sqrt(3)=ai  ```
-    ```    Now expand  ```
-    ```    ```
-    ```     (1+a)**3 = a**3 + 3a**2  + 3a + 1  ```
-    ```              = 3*sqrt(3)i -9 + 3*sqrt(3) + 1  ```
-    ```              = -9  + 1 = -8  ```
     ```    ```
     ```     sustituting into x**3 + 8 = -8 + 8 =0  ```
     ```    ```
